@@ -1,7 +1,7 @@
 // implement your API here
 //require express
 const express = require('express');
-
+const cors = require('cors');
 const db = require('./data/db.js')
 
 //create the server
@@ -11,6 +11,7 @@ const server = express();
 //middleware to parse the body to be avaliable on req
 //needed for any request that uses req.body
 server.use(express.json())
+server.use(cors())
 
 
 //Request Handlers
