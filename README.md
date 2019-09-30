@@ -105,7 +105,7 @@ When the client makes a `DELETE` request to `/api/users/:id`:
 
   - return HTTP status code `404` (Not Found).
   - return the following JSON object: `{ message: "The user with the specified ID does not exist." }`.
-
+message: "The user with the specified ID does not exist." 
 - If there's an error in removing the _user_ from the database:
   - cancel the request.
   - respond with HTTP status code `500`.
